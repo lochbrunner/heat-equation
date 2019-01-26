@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Heat_Equation.cpp" />
+    <ClCompile Include="GLSL_Shader.cpp">
+      <Filter>Hilfsklassen</Filter>
+    </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>Hilfsklassen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlgebraStuff.h">
+      <Filter>Hilfsklassen</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSL_Shader.h">
+      <Filter>Hilfsklassen</Filter>
+    </ClInclude>
+    <ClInclude Include="cutil_math.h">
+      <Filter>Kerneldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="shrUtils.h">
+      <Filter>Kerneldateien</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>Hilfsklassen</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shader\basic-mesh.vert">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="..\shader\basic-mesh.frag">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Hilfsklassen">
+      <UniqueIdentifier>{26f35b38-ed67-47ce-9694-05ccb1dbfd7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kerneldateien">
+      <UniqueIdentifier>{f7a4a217-1ad2-4f44-bd2e-ac94f046a0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{b2e4dc37-1343-499f-9f04-2397ba70c6ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="Heat_Equation_kernel.cu">
+      <Filter>Kerneldateien</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
